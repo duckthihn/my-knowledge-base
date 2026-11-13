@@ -9,7 +9,7 @@ Topic / goal: [e.g. AI engineering research, side project X, work notes]
 
 ## Languages
 
-- Talk to the user in English.
+- Talk to the user in English/Vietnamese.
 - Write wiki pages in: English (keep technical terms, code, and proper nouns in their original language).
 - Never translate or edit anything in `raw/`.
 
