@@ -99,5 +99,5 @@ Internal links use Obsidian wikilink syntax: `[[page-name]]` or `[[page-name|dis
 ## Stack
 
 - **[Obsidian](https://obsidian.md)** — local-first markdown editor with graph view and wikilinks.
-- **[Antigravity (AGY)](https://antigravity.dev)** — AI agent that reads `SCHEMA.md` and runs the workflows.
+- **[Antigravity (AGY)](https://antigravity.google/product/antigravity-cli/)** — AI agent that reads `SCHEMA.md` and runs the workflows.
 - **Git** — version control for all wiki edits; every agent change is diffable.
