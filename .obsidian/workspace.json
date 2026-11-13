@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "wiki/index.md",
-                "mode": "source",
+                "file": "wiki/entities/apache-iceberg-format.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "apache-iceberg-format"
             }
           }
         ]
@@ -83,7 +83,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 219.90970993041992
+    "width": 226
   },
   "right": {
     "id": "a506ff628c3e30d5",
@@ -177,30 +177,30 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "obsidian-git:Open Git source control": false,
       "switcher:Open quick switcher": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "bases:Create new base": false,
-      "graph:Open graph view": false
+      "graph:Open graph view": false,
+      "obsidian-git:Open Git source control": false
     }
   },
   "active": "44d15720c9c297a7",
   "lastOpenFiles": [
-    "wiki/log.md",
-    "wiki/concepts/adaptive-query-execution.md",
+    "raw/apache-iceberg.md",
     "wiki/entities/trino.md",
-    "wiki/entities/delta-lake.md",
-    "wiki/entities/aws-lake-formation-service.md",
     "outputs/delta-lake-vs-iceberg.md",
     "wiki/topics/lakehouse-architecture.md",
+    "wiki/concepts/adaptive-query-execution.md",
+    "wiki/entities/delta-lake.md",
     "wiki/entities/apache-iceberg-format.md",
     "README.md",
     "wiki/topics",
     "outputs/iceberg-how-it-works-and-use-cases.md",
     "wiki/concepts/athena-partition-projection.md",
+    "wiki/entities/aws-lake-formation-service.md",
     "wiki/entities/aws-glue-platform.md",
     "wiki/entities/aws-athena-service.md",
     "wiki/sources/learn-spark.md",
