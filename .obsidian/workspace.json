@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "wiki/topics/lakehouse-architecture.md",
+                "file": "wiki/entities/trino.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "lakehouse-architecture"
+              "title": "trino"
             }
           }
         ]
@@ -189,9 +189,13 @@
   },
   "active": "44d15720c9c297a7",
   "lastOpenFiles": [
+    "outputs/delta-lake-vs-iceberg.md",
+    "wiki/topics/lakehouse-architecture.md",
+    "wiki/entities/trino.md",
+    "wiki/concepts/adaptive-query-execution.md",
+    "wiki/entities/delta-lake.md",
     "wiki/entities/apache-iceberg-format.md",
     "README.md",
-    "wiki/topics/lakehouse-architecture.md",
     "wiki/topics",
     "outputs/iceberg-how-it-works-and-use-cases.md",
     "wiki/concepts/athena-partition-projection.md",
@@ -213,10 +217,6 @@
     "wiki/problems/aws-glue-job-optimization.md",
     "raw/apache-iceberg.md",
     "raw/assets/Pasted image 20261113165327.png",
-    "wiki/index.md",
-    "wiki/concepts/lake-formation-security-model.md",
-    "links.md",
-    "raw/aws-lake-formation.md",
     "raw/raw/assets",
     "raw/raw",
     "references",

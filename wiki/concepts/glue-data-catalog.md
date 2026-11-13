@@ -85,6 +85,7 @@ While automated metadata crawlers exist to infer schemas for legacy Hive tables,
 
 ## Related
 
+- [[lakehouse-architecture]]
 - [[aws-glue]]
 - [[aws-glue-platform]]
 - [[aws-glue-architecture-and-dpu]]

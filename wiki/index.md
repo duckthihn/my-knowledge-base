@@ -11,6 +11,7 @@
 ## Concepts
 - [[spark-execution-model]] — Spark Execution Model and DAG
 - [[spark-partitioning-and-shuffle]] — Spark Partitioning and Shuffle Optimization
+- [[adaptive-query-execution]] — Adaptive Query Execution (AQE)
 - [[parquet-file-architecture]] — Parquet File Architecture and Internals
 - [[query-io-optimizations]] — Query I/O Optimizations in Columnar Storage
 - [[iceberg-metadata-architecture]] — Iceberg Metadata Architecture and ACID Commits
@@ -26,6 +27,8 @@
 - [[apache-spark]] — Apache Spark Architecture
 - [[apache-parquet-format]] — Apache Parquet Format
 - [[apache-iceberg-format]] — Apache Iceberg Table Format
+- [[delta-lake]] — Delta Lake Table Format
+- [[trino]] — Trino (PrestoSQL) Query Engine
 - [[aws-glue-platform]] — AWS Glue Serverless Data Integration
 - [[aws-lake-formation-service]] — AWS Lake Formation
 - [[aws-athena-service]] — AWS Athena

@@ -82,6 +82,7 @@ Industry formats are rapidly converging: Databricks encodes Format v3 deletion v
 - [[iceberg-metadata-architecture]]
 - [[iceberg-table-optimizations]]
 - [[iceberg-table-maintenance]]
+- [[lakehouse-architecture]]
 - [[aws-athena]]
 - [[aws-athena-service]]
 - [[aws-glue]]

@@ -92,6 +92,7 @@ To maximize I/O efficiency, align physical file sizing with computational parall
 
 ## Related
 
+- [[lakehouse-architecture]]
 - [[apache-parquet]]
 - [[parquet-file-architecture]]
 - [[parquet-small-files-problem]]

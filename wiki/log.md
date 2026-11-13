@@ -42,3 +42,16 @@
 - Created: [[lakehouse-architecture]] (wiki/topics/)
 - Updated: [[index.md]] (Topics section)
 - Contradictions: none
+
+## [2026-11-13] lint | Full vault lint check
+- Issues found: 1 orphan page, 3 missing concept/entity pages
+- Fixed orphan [[lakehouse-architecture]]: added inbound links from [[apache-iceberg-format]], [[glue-data-catalog]], [[query-io-optimizations]]
+- Created: [[adaptive-query-execution]], [[delta-lake]], [[trino]]
+- Updated: [[index.md]] (Concepts + Entities sections)
+- Contradictions: none
+
+## [2026-11-13] query | So sánh Delta Lake vs Apache Iceberg
+- Sources consulted: [[delta-lake]], [[apache-iceberg-format]], [[lakehouse-architecture]], [[iceberg-metadata-architecture]], [[iceberg-table-optimizations]], [[iceberg-table-maintenance]]
+- Saved output: outputs/delta-lake-vs-iceberg.md
+- Updated: none
+- Contradictions: none
