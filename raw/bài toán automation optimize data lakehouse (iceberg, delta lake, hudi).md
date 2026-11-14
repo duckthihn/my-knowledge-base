@@ -25,8 +25,9 @@ hive -> cấp độ Folder/Direction/Partition
 - chỉ số format-specific (ví dụ: manifest count trong Iceberg  / delta file trong Hudi)
 
 
-
+core
 - theo dõi metadata của các bảng
 - phát hiện ra bảng nào cần optimize
 - tự sinh ra các optimize task (automatically generate optimize task)
-- 
+- gửi các task tới optimizer/executor
+- theo dõi, nhận kết quả, cập nhật status của bảng
