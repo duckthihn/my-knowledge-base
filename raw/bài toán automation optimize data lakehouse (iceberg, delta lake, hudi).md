@@ -10,7 +10,7 @@ Nguồn: https://www.youtube.com/watch?v=a0NdOrVxF3s&t=603s (youtube)
 
 iceberg -> cấp độ file -> dựa vào file metadata.json
 ![[Pasted image 20261114134748.png|481]]
-
+![[Pasted image 20261114134958.png]]
 
 hive -> cấp độ Folder/Direction/Partition
 ![[Pasted image 20261114134621.png|264]]
