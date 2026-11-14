@@ -31,3 +31,5 @@ core
 - tự sinh ra các optimize task (automatically generate optimize task)
 - gửi các task tới optimizer/executor
 - theo dõi, nhận kết quả, cập nhật status của bảng
+
+![[Pasted image 20261115024734.png]]
