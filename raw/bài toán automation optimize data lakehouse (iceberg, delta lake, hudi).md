@@ -21,4 +21,12 @@ hive -> cấp độ Folder/Direction/Partition
 - fragmentation (file/row-group phân mảnh trong partition)
 - dư thừa file
 - phân vùng không đều (data/partition skew)
+- tỉ lệ delete/overwrite cao (nhiều tombstone issue/delete files)
+- chỉ số format-specific (ví dụ: manifest count trong Iceberg  / delta file trong Hudi)
+
+
+
+- theo dõi metadata của các bảng
+- phát hiện ra bảng nào cần optimize
+- tự sinh ra các optimize task (automatically generate optimize task)
 - 
