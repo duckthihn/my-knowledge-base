@@ -7,7 +7,6 @@ Nguồn: https://www.youtube.com/watch?v=a0NdOrVxF3s&t=603s (youtube)
 - reduce query latency
 - reduce storage cost
 
-
 iceberg -> cấp độ file -> dựa vào file metadata.json
 ![[Pasted image 20261114134748.png|481]]
 ![[Pasted image 20261114134958.png]]
