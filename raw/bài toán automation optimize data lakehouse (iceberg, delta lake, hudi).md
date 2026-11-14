@@ -6,6 +6,8 @@ Nguồn: https://www.youtube.com/watch?v=a0NdOrVxF3s&t=603s (youtube)
 - reduce small files problems (compact)
 - reduce query latency
 - reduce storage cost
+- đảm bảo tính atomic metadata commit (không phá commit/writer của iceberg)
+- xử lý concurrency và multi writer và rollback khi lỗi
 
 iceberg -> cấp độ file -> dựa vào file metadata.json
 ![[Pasted image 20261114134748.png|481]]
@@ -13,3 +15,10 @@ iceberg -> cấp độ file -> dựa vào file metadata.json
 
 hive -> cấp độ Folder/Direction/Partition
 ![[Pasted image 20261114134621.png|264]]
+
+# Khi nào cần optimize data lakehouse
+- quá nhiều file nhỏ (small files)
+- fragmentation (file/row-group phân mảnh trong partition)
+- dư thừa file
+- phân vùng không đều (data/partition skew)
+- 
