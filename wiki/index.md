@@ -7,6 +7,7 @@
 - [[aws-glue]] — AWS Glue: Architecture, Jobs, and Serverless Data Integration
 - [[aws-lake-formation]] — AWS Lake Formation: Data Lake Security and Governance
 - [[aws-athena]] — AWS Athena: Serverless Interactive Query Service
+- [[lakehouse-automation-optimize]] — Automation Optimize Data Lakehouse (Iceberg, Delta Lake, Hudi)
 
 ## Concepts
 - [[spark-execution-model]] — Spark Execution Model and DAG
@@ -16,6 +17,7 @@
 - [[query-io-optimizations]] — Query I/O Optimizations in Columnar Storage
 - [[iceberg-metadata-architecture]] — Iceberg Metadata Architecture and ACID Commits
 - [[iceberg-table-optimizations]] — Iceberg Table Optimizations and Query Mechanics
+- [[automated-lakehouse-optimization]] — Automated Lakehouse Optimization and Compaction Architecture
 - [[aws-glue-architecture-and-dpu]] — AWS Glue Architecture and DPU Sizing
 - [[dynamicframe-vs-dataframe]] — DynamicFrame vs. Spark DataFrame in AWS Glue
 - [[glue-data-catalog]] — AWS Glue Data Catalog and Metadata Partitioning

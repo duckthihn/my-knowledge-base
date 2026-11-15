@@ -2,9 +2,9 @@
 type: problem
 title: Iceberg Table Maintenance and Performance Degradation
 created: 2026-11-13
-updated: 2026-11-13
-sources: ["[[apache-iceberg]]", "[[learn-spark]]", "[[apache-parquet]]"]
-tags: [iceberg, spark, maintenance, compaction, small-files, delete-files, optimization]
+updated: 2026-11-15
+sources: ["[[apache-iceberg]]", "[[learn-spark]]", "[[apache-parquet]]", "[[lakehouse-automation-optimize]]"]
+tags: [iceberg, spark, maintenance, compaction, small-files, delete-files, optimization, automation]
 status: stable
 ---
 
@@ -70,18 +70,40 @@ CALL glue_catalog.system.remove_orphan_files(
 );
 ```
 
+### 4. Manifest Rewrites (`rewrite_manifests`)
+Optimizes metadata query planning by consolidating numerous small manifest files into larger, uniform manifests and sorting data file entries by partition boundaries (see [[apache-iceberg]], [[iceberg-metadata-architecture]]):
+
+```sql
+-- Consolidate fragmented manifest files
+CALL glue_catalog.system.rewrite_manifests(
+    table => 'sales_db.orders'
+);
+```
+- **Benefit**: Significantly accelerates Tier 1 manifest pruning for analytical queries and prevents metadata bloat (see [[iceberg-table-optimizations]], [[automated-lakehouse-optimization]]).
+
+## Automation: Continuous Optimization vs. Static Cron Jobs
+
+Running table maintenance via static daily or weekly cron scripts introduces operational lag and resource waste: tables can degrade between scheduled runs, or batch jobs run redundantly on partitions that do not require compaction (see [[lakehouse-automation-optimize]]).
+
+To address this, modern platforms deploy dedicated lakehouse optimization services (see [[automated-lakehouse-optimization]]):
+- **Continuous Monitoring**: Tracks real-time manifest file counts, delete file accumulation, and small-file fragmentation indices (see [[lakehouse-automation-optimize]]).
+- **Trigger-Based Execution**: Evaluates quantitative thresholds to trigger targeted compaction only when partition performance deteriorates, preventing data swamps (see [[lakehouse-automation-optimize]]).
+- **Safe Concurrent Commits**: Leverages Iceberg's file-level metadata tracking and Optimistic Concurrency Control (OCC) to commit compacted data files atomically without interrupting concurrent ingest streams (see [[lakehouse-automation-optimize]], [[iceberg-metadata-architecture]]).
+
 ## Critical Operational Anti-Patterns
 
-Avoid these common operational pitfalls when managing Iceberg tables (see [[apache-iceberg]]):
+Avoid these common operational pitfalls when managing Iceberg tables (see [[apache-iceberg]], [[lakehouse-automation-optimize]]):
 
 - **Manual S3 Deletions**: Never delete data or metadata files directly via the AWS CLI or S3 SDK. Doing so corrupts the Iceberg manifest metadata tree, causing subsequent queries to fail with `FileNotFoundException` (see [[apache-iceberg]]).
-- **Running MOR Without Regular Compaction**: If using Format v2 Merge-On-Read for high-frequency CDC, schedule hourly or daily compaction to merge delete files into base data files or adopt Format v3 Deletion Vectors (see [[apache-iceberg]], [[iceberg-table-optimizations]]).
+- **Running MOR Without Regular Compaction**: If using Format v2 Merge-On-Read for high-frequency CDC, schedule hourly or automated compaction to merge delete files into base data files or adopt Format v3 Deletion Vectors (see [[apache-iceberg]], [[iceberg-table-optimizations]], [[automated-lakehouse-optimization]]).
 - **Over-Partitioning**: Even with hidden partitioning, declaring overly fine-grained partitions (e.g., `hours(ts)`) produces millions of tiny files, recreating the small files problem (see [[apache-iceberg]], [[parquet-small-files-problem]]).
 - **Premature Format v3 Upgrades**: Before upgrading a table property to `format-version = '3'`, verify that every compute engine reading and writing to the table (e.g., EMR, Glue, Athena, Redshift) fully supports v3 features like deletion vectors, or jobs will fail during commit (see [[apache-iceberg]]).
 
 ## Related
 
 - [[apache-iceberg]]
+- [[lakehouse-automation-optimize]]
+- [[automated-lakehouse-optimization]]
 - [[iceberg-metadata-architecture]]
 - [[iceberg-table-optimizations]]
 - [[apache-iceberg-format]]

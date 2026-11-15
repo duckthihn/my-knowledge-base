@@ -2,9 +2,9 @@
 type: topic
 title: Lakehouse Architecture
 created: 2026-11-13
-updated: 2026-11-13
-sources: ["[[apache-iceberg]]", "[[apache-parquet]]", "[[aws-glue]]", "[[aws-lake-formation]]", "[[aws-athena]]"]
-tags: [lakehouse, architecture, iceberg, parquet, data-lake, data-warehouse, aws]
+updated: 2026-11-15
+sources: ["[[apache-iceberg]]", "[[apache-parquet]]", "[[aws-glue]]", "[[aws-lake-formation]]", "[[aws-athena]]", "[[lakehouse-automation-optimize]]"]
+tags: [lakehouse, architecture, iceberg, parquet, data-lake, data-warehouse, aws, optimization]
 status: stable
 ---
 
@@ -171,13 +171,16 @@ On AWS, the lakehouse pattern converges on a well-defined set of managed service
 
 ## Operational Requirements
 
-Lakehouses (specifically Iceberg) require scheduled maintenance — they do **not** self-compact (see [[iceberg-table-maintenance]]):
+Lakehouses (such as Iceberg, Delta Lake, and Hudi) require active maintenance to prevent degrading into an inefficient "data swamp" — they do **not** self-compact by default (see [[iceberg-table-maintenance]], [[lakehouse-automation-optimize]]):
 
-| Procedure | Purpose | Cadence |
+| Procedure | Purpose | Cadence / Trigger |
 |---|---|---|
-| `rewrite_data_files` | Compact small files → 128–512 MB, merge delete files | Daily / Weekly |
-| `expire_snapshots` | Reclaim S3 storage from old snapshots | Daily / Weekly |
-| `remove_orphan_files` | Delete uncommitted files from failed jobs | Weekly |
+| `rewrite_data_files` | Compact small files → 128–512 MB, merge delete files | Continuous trigger / Daily (see [[automated-lakehouse-optimization]]) |
+| `rewrite_manifests` | Consolidate manifest files, optimize file-level metadata pruning | Metric threshold / Weekly (see [[automated-lakehouse-optimization]]) |
+| `expire_snapshots` | Reclaim S3 storage from old snapshots and metadata trees | Retention policy / Daily (see [[iceberg-table-maintenance]]) |
+| `remove_orphan_files` | Delete uncommitted files from failed or crashed write jobs | Weekly (see [[iceberg-table-maintenance]]) |
+
+To eliminate manual maintenance overhead, modern lakehouse platforms deploy autonomous background optimization services that monitor metadata metrics, detect fragmentation or small-file bloat, and execute non-blocking atomic commits concurrently with active writers (see [[automated-lakehouse-optimization]], [[lakehouse-automation-optimize]]).
 
 > [!CAUTION]
 > Never delete Iceberg data or metadata files directly via AWS CLI or S3 SDK — this corrupts the manifest tree and causes `FileNotFoundException` on subsequent queries (see [[iceberg-table-maintenance]]).
@@ -185,7 +188,10 @@ Lakehouses (specifically Iceberg) require scheduled maintenance — they do **no
 ## Related
 
 - [[apache-iceberg]]
+- [[lakehouse-automation-optimize]]
+- [[automated-lakehouse-optimization]]
 - [[apache-iceberg-format]]
+- [[delta-lake]]
 - [[iceberg-metadata-architecture]]
 - [[iceberg-table-optimizations]]
 - [[iceberg-table-maintenance]]

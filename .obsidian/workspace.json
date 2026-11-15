@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "raw/bài toán automation optimize data lakehouse (iceberg, delta lake, hudi).md",
+                "file": "wiki/sources/lakehouse-automation-optimize.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "bài toán automation optimize data lakehouse (iceberg, delta lake, hudi)"
+              "title": "lakehouse-automation-optimize"
             }
           }
         ]
@@ -83,8 +83,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "a506ff628c3e30d5",
@@ -190,9 +189,11 @@
   },
   "active": "23d098b6e90ccf8a",
   "lastOpenFiles": [
+    "raw/bài toán automation optimize data lakehouse (iceberg, delta lake, hudi).md",
+    "wiki/concepts/automated-lakehouse-optimization.md",
+    "wiki/sources/lakehouse-automation-optimize.md",
     "raw/assets/Pasted image 20261115024734.png",
     "raw/learn-spark.md",
-    "raw/bài toán automation optimize data lakehouse (iceberg, delta lake, hudi).md",
     "raw/bài toán crawling data.md",
     "raw/assets/Pasted image 20261114134958.png",
     "raw/assets/Pasted image 20261114134748.png",
@@ -220,7 +221,6 @@
     "wiki/entities/aws-athena-service.md",
     "wiki/sources/learn-spark.md",
     "wiki/problems/athena-query-optimization-and-cost.md",
-    "wiki/sources/apache-iceberg.md",
     "raw/assets/Pasted image 20261113165327.png",
     "raw/raw/assets",
     "raw/raw",

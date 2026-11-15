@@ -55,3 +55,10 @@
 - Saved output: outputs/delta-lake-vs-iceberg.md
 - Updated: none
 - Contradictions: none
+
+## [2026-11-15] ingest | Automation Optimize Data Lakehouse (Iceberg, Delta Lake, Hudi)
+- Source: raw/bài toán automation optimize data lakehouse (iceberg, delta lake, hudi).md
+- Created: [[lakehouse-automation-optimize]], [[automated-lakehouse-optimization]]
+- Updated: [[iceberg-table-maintenance]], [[lakehouse-architecture]], [[index.md]]
+- Contradictions: none
+
