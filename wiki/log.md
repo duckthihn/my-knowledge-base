@@ -74,3 +74,9 @@
 - Updated: none
 - Contradictions: none
 
+## [2026-11-16] query | Broadcast join là gì, hoạt động như thế nào
+- Sources consulted: [[spark-partitioning-and-shuffle]], [[spark-execution-model]], [[debugging-slow-spark-jobs]], [[adaptive-query-execution]], [[learn-spark]], [[apache-spark]]
+- Saved output: outputs/broadcast-join-mechanics.md
+- Updated: none
+- Contradictions: none
+
