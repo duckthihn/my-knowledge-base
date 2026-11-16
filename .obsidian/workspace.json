@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "raw/glue-pyspark-coding-template.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "glue-pyspark-coding-template"
             }
           }
         ]
@@ -187,13 +187,16 @@
       "graph:Open graph view": false
     }
   },
-  "active": "179a29eb0b48f026",
+  "active": "23d098b6e90ccf8a",
   "lastOpenFiles": [
+    "raw/apache-iceberg.md",
+    "raw/glue-pyspark-coding-template.md",
+    "raw/apache-parquet.md",
+    "README.md",
     "wiki/sources/aws-athena.md",
     "wiki/log.md",
     "PROMPTS.md",
     "SCHEMA.md",
-    "README.md",
     "raw/bài toán crawling data.md",
     "wiki/sources/lakehouse-automation-optimize.md",
     "raw/bài toán automation optimize data lakehouse (iceberg, delta lake, hudi).md",
@@ -218,9 +221,6 @@
     "wiki/entities/apache-iceberg-format.md",
     "wiki/topics",
     "wiki/concepts/athena-partition-projection.md",
-    "wiki/entities/aws-glue-platform.md",
-    "wiki/entities/aws-athena-service.md",
-    "wiki/sources/learn-spark.md",
     "raw/assets/Pasted image 20261113165327.png",
     "raw/raw/assets",
     "raw/raw",
