@@ -55,6 +55,7 @@ Athena is designed for specific analytical patterns within cloud data platforms 
 ## Related
 
 - [[aws-athena]]
+- [[trino]]
 - [[aws-athena-architecture-and-cost]]
 - [[athena-partition-projection]]
 - [[athena-query-optimization-and-cost]]

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "wiki/sources/lakehouse-automation-optimize.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "lakehouse-automation-optimize"
+              "title": "README"
             }
           }
         ]
@@ -187,27 +187,28 @@
       "graph:Open graph view": false
     }
   },
-  "active": "23d098b6e90ccf8a",
+  "active": "179a29eb0b48f026",
   "lastOpenFiles": [
+    "wiki/sources/aws-athena.md",
+    "wiki/log.md",
+    "PROMPTS.md",
+    "SCHEMA.md",
+    "README.md",
+    "raw/bài toán crawling data.md",
+    "wiki/sources/lakehouse-automation-optimize.md",
     "raw/bài toán automation optimize data lakehouse (iceberg, delta lake, hudi).md",
     "wiki/concepts/automated-lakehouse-optimization.md",
-    "wiki/sources/lakehouse-automation-optimize.md",
     "raw/assets/Pasted image 20261115024734.png",
     "raw/learn-spark.md",
-    "raw/bài toán crawling data.md",
     "raw/assets/Pasted image 20261114134958.png",
     "raw/assets/Pasted image 20261114134748.png",
     "raw/assets/Pasted image 20261114134621.png",
-    "PROMPTS.md",
-    "README.md",
     "outputs/delta-lake-vs-iceberg.md",
     "outputs/iceberg-how-it-works-and-use-cases.md",
     "wiki/concepts/iceberg-metadata-architecture.md",
     "wiki/index.md",
-    "wiki/log.md",
     "2026-11-14.md",
     "Untitled.base",
-    "SCHEMA.md",
     "wiki/sources/apache-parquet.md",
     "wiki/concepts/adaptive-query-execution.md",
     "wiki/entities/trino.md",
@@ -220,7 +221,6 @@
     "wiki/entities/aws-glue-platform.md",
     "wiki/entities/aws-athena-service.md",
     "wiki/sources/learn-spark.md",
-    "wiki/problems/athena-query-optimization-and-cost.md",
     "raw/assets/Pasted image 20261113165327.png",
     "raw/raw/assets",
     "raw/raw",

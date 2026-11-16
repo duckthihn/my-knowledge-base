@@ -62,3 +62,9 @@
 - Updated: [[iceberg-table-maintenance]], [[lakehouse-architecture]], [[index.md]]
 - Contradictions: none
 
+## [2026-11-16] lint | Full vault lint check
+- Issues found: 2 orphan pages ([[adaptive-query-execution]], [[trino]]), 4 Markdown `[text](raw/...)` links in source pages, 12 pages >800 words, 1 un-ingested raw file (`raw/bài toán crawling data.md`)
+- Fixed orphans: added inbound links to [[adaptive-query-execution]] from [[spark-partitioning-and-shuffle]] and to [[trino]] from [[aws-athena]], [[aws-athena-service]], [[aws-athena-architecture-and-cost]]
+- Fixed formatting: replaced Markdown `raw/` links with inline code in [[apache-iceberg]], [[aws-athena]], [[aws-glue]], [[aws-lake-formation]]
+- Contradictions: none
+

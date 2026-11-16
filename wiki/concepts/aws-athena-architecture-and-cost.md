@@ -78,6 +78,7 @@ Converting raw row-oriented data into compressed columnar Parquet yields a direc
 - [[athena-query-optimization-and-cost]]
 - [[athena-partition-projection]]
 - [[aws-athena-service]]
+- [[trino]]
 - [[parquet-file-architecture]]
 - [[query-io-optimizations]]
 - [[parquet-small-files-problem]]

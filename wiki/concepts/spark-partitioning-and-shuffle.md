@@ -92,4 +92,5 @@ A disciplined PySpark engineer checks these three questions before and after eve
 - [[aws-glue-job-optimization]]
 - [[spark-execution-model]]
 - [[debugging-slow-spark-jobs]]
+- [[adaptive-query-execution]]
 - [[apache-spark]]

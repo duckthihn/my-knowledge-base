@@ -11,7 +11,7 @@ status: stable
 # AWS Lake Formation: Data Lake Security and Governance
 
 - **Original Title**: AWS Lake Formation Notes
-- **Author / Source**: [AWS Documentation & Practical Notes](raw/aws-lake-formation.md)
+- **Author / Source**: AWS Documentation & Practical Notes (`raw/aws-lake-formation.md`)
 - **Path in raw**: `raw/aws-lake-formation.md`
 
 ## Summary

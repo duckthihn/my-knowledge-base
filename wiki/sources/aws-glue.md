@@ -11,7 +11,7 @@ status: stable
 # AWS Glue: Architecture, Jobs, and Serverless Data Integration
 
 - **Original Title**: What is Glue / Glue Job, DPU, Data Catalog, Workflows & Triggers
-- **Author / Source**: [AWS Documentation & Practical Notes](raw/aws-glue.md), [AWS Glue Pricing](https://aws.amazon.com/vi/glue/pricing/)
+- **Author / Source**: AWS Documentation & Practical Notes (`raw/aws-glue.md`), [AWS Glue Pricing](https://aws.amazon.com/vi/glue/pricing/)
 - **Path in raw**: `raw/aws-glue.md`
 
 ## Summary

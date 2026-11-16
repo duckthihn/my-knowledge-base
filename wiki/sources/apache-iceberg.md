@@ -11,7 +11,7 @@ status: stable
 # Apache Iceberg: Architecture, Operations, and Maintenance
 
 - **Original Title**: Iceberg Fundamentals / Architecture & AWS Glue Integration
-- **Author / Source**: [Internal Notes & AWS Documentation](raw/apache-iceberg.md)
+- **Author / Source**: Internal Notes & AWS Documentation (`raw/apache-iceberg.md`)
 - **Path in raw**: `raw/apache-iceberg.md`
 
 ## Summary

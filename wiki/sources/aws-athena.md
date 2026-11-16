@@ -11,7 +11,7 @@ status: stable
 # AWS Athena: Serverless Interactive Query Service
 
 - **Original Title**: What is Athena / How it works, Cost, Optimization & Partition Projection
-- **Author / Source**: [AWS Documentation & Practical Notes](raw/aws-athena.md), [AWS Athena Pricing](https://aws.amazon.com/vi/athena/pricing/)
+- **Author / Source**: AWS Documentation & Practical Notes (`raw/aws-athena.md`), [AWS Athena Pricing](https://aws.amazon.com/vi/athena/pricing/)
 - **Path in raw**: `raw/aws-athena.md`
 
 ## Summary
@@ -50,6 +50,7 @@ A comprehensive architectural and performance guide to Amazon Athena, AWS's serv
 - [[athena-partition-projection]]
 - [[athena-query-optimization-and-cost]]
 - [[aws-athena-service]]
+- [[trino]]
 - [[query-io-optimizations]]
 - [[glue-data-catalog]]
 - [[parquet-file-architecture]]
