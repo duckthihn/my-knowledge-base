@@ -1,15 +1,19 @@
-# Query: So sánh Delta Lake vs Apache Iceberg
+# Delta Lake vs Apache Iceberg: So sánh cơ chế ACID, Kiến trúc & Use Cases
 
 **Date**: 2026-11-13  
 **Sources**: [[delta-lake]], [[apache-iceberg-format]], [[lakehouse-architecture]], [[iceberg-metadata-architecture]], [[iceberg-table-optimizations]], [[iceberg-table-maintenance]]
 
 ---
 
-## Cơ chế ACID — Điểm khác biệt cốt lõi
+Tài liệu so sánh chuyên sâu giữa hai định dạng table format phổ biến trong kiến trúc Data Lakehouse: **Delta Lake** và **Apache Iceberg**, tổng hợp từ knowledge base.
+
+---
+
+## 1. Cơ chế ACID — Điểm khác biệt cốt lõi
 
 Cả hai đều đảm bảo ACID trên object storage, nhưng bằng cơ chế hoàn toàn khác nhau (xem [[delta-lake]], [[iceberg-metadata-architecture]]):
 
-### Delta Lake — Transaction Log (`_delta_log`)
+### 1.1. Delta Lake — Transaction Log (`_delta_log`)
 
 ```
 s3://bucket/my-table/
@@ -27,7 +31,7 @@ s3://bucket/my-table/
 - **Không cần catalog** cho atomic commit — log file trên S3 IS the source of truth
 - Checkpoint định kỳ (mỗi 10 commits) để tránh replay quá dài
 
-### Apache Iceberg — Catalog Pointer Swap (CAS)
+### 1.2. Apache Iceberg — Catalog Pointer Swap (CAS)
 
 ```
 Catalog (AWS Glue)
@@ -52,7 +56,7 @@ s3://bucket/my-table/data/
 
 ---
 
-## So sánh toàn diện
+## 2. Bảng so sánh toàn diện
 
 | Tiêu chí | Delta Lake | Apache Iceberg |
 |---|---|---|
@@ -73,13 +77,13 @@ s3://bucket/my-table/data/
 
 ---
 
-## Format Convergence
+## 3. Xu hướng Format Convergence
 
 Databricks encode Delta Lake deletion vectors **bằng đúng binary specification** của Iceberg Format v3 Deletion Vectors, cho phép bidirectional interoperability giữa hai format mà không cần copy data (xem [[apache-iceberg-format]], [[delta-lake]]).
 
 ---
 
-## Khi nào dùng cái nào?
+## 4. Hướng dẫn lựa chọn (Khi nào dùng cái nào?)
 
 | Chọn **Delta Lake** khi... | Chọn **Apache Iceberg** khi... |
 |---|---|
@@ -91,4 +95,16 @@ Databricks encode Delta Lake deletion vectors **bằng đúng binary specificati
 
 ---
 
-*Sources: [[delta-lake]], [[apache-iceberg-format]], [[lakehouse-architecture]], [[iceberg-metadata-architecture]], [[iceberg-table-optimizations]], [[iceberg-table-maintenance]]*
+## 5. Phạm vi wiki chưa đề cập
+
+- Chi tiết UniForm (Universal Format) của Databricks giúp đọc Delta tables dưới dạng Iceberg reader.
+- So sánh chi tiết hiệu năng và cơ chế lưu trữ của Apache Hudi so với Delta Lake và Iceberg.
+
+## Sources Consulted
+
+- [[delta-lake]]
+- [[apache-iceberg-format]]
+- [[lakehouse-architecture]]
+- [[iceberg-metadata-architecture]]
+- [[iceberg-table-optimizations]]
+- [[iceberg-table-maintenance]]

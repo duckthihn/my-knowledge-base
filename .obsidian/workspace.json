@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "outputs/aws-glue-pyspark-best-practices.md",
+                "file": "outputs/spark-coalesce-guide.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "aws-glue-pyspark-best-practices"
+              "title": "spark-coalesce-guide"
             }
           }
         ]
@@ -83,7 +83,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 299.1774711608887
+    "width": 255.35966110229492
   },
   "right": {
     "id": "a506ff628c3e30d5",
@@ -189,6 +189,11 @@
   },
   "active": "23d098b6e90ccf8a",
   "lastOpenFiles": [
+    "outputs/delta-lake-vs-iceberg.md",
+    "outputs/spark-coalesce-guide.md",
+    "outputs/iceberg-how-it-works-and-use-cases.md",
+    "outputs/broadcast-join-mechanics.md",
+    "outputs/aws-glue-pyspark-best-practices.md",
     "wiki/problems/aws-glue-job-optimization.md",
     "wiki/sources/apache-iceberg.md",
     "wiki/concepts/query-io-optimizations.md",
@@ -198,9 +203,6 @@
     "raw/aws-lake-formation.md",
     "raw/bài toán automation optimize data lakehouse (iceberg, delta lake, hudi).md",
     "raw/aws-athena.md",
-    "outputs/aws-glue-pyspark-best-practices.md",
-    "outputs/broadcast-join-mechanics.md",
-    "outputs/delta-lake-vs-iceberg.md",
     "raw/apache-iceberg.md",
     "wiki/log.md",
     "wiki/index.md",
@@ -214,11 +216,9 @@
     "wiki/sources/lakehouse-automation-optimize.md",
     "wiki/concepts/automated-lakehouse-optimization.md",
     "raw/assets/Pasted image 20261115024734.png",
-    "raw/learn-spark.md",
     "raw/assets/Pasted image 20261114134958.png",
     "raw/assets/Pasted image 20261114134748.png",
     "raw/assets/Pasted image 20261114134621.png",
-    "outputs/iceberg-how-it-works-and-use-cases.md",
     "Untitled.base",
     "wiki/topics",
     "raw/assets/Pasted image 20261113165327.png",

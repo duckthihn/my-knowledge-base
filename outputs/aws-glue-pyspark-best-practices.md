@@ -1,5 +1,10 @@
 # AWS Glue Jobs (PySpark): Best Practices for Writing & Cost Optimization
 
+**Date**: 2026-11-16  
+**Sources**: [[aws-glue-job-optimization]], [[aws-glue-architecture-and-dpu]], [[dynamicframe-vs-dataframe]], [[glue-data-catalog]], [[adaptive-query-execution]], [[debugging-slow-spark-jobs]], [[parquet-small-files-problem]], [[spark-partitioning-and-shuffle]], [[spark-execution-model]], [[apache-iceberg-format]]
+
+---
+
 Checklist thực chiến khi xây dựng và vận hành **AWS Glue Jobs (PySpark)** trong dự án thực tế, tổng hợp từ knowledge base. Chi phí Glue được tính theo $\text{Cost} = \text{DPUs} \times \text{Runtime (hours)}$ (xem [[aws-glue-architecture-and-dpu]], [[aws-glue-job-optimization]]), do đó tối ưu hiệu năng Spark đồng nghĩa trực tiếp với tối ưu chi phí.
 
 ---

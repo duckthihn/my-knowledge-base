@@ -1,13 +1,17 @@
-# Query: Cách hoạt động của Iceberg & Use Cases
+# Apache Iceberg: Concept, Mechanics & Use Cases
 
 **Date**: 2026-11-13  
 **Sources**: [[iceberg-metadata-architecture]], [[iceberg-table-optimizations]], [[apache-iceberg-format]], [[apache-iceberg]], [[iceberg-table-maintenance]]
 
 ---
 
-## Cách hoạt động của Apache Iceberg
+Tài liệu giải thích chi tiết về cơ chế hoạt động, kiến trúc 3 tầng và các kịch bản sử dụng (use cases) của **Apache Iceberg**, tổng hợp từ knowledge base.
 
-### Kiến trúc 3 tầng (3-Tier Metadata Hierarchy)
+---
+
+## 1. Kiến trúc & Cơ chế hoạt động của Apache Iceberg
+
+### 1.1. Kiến trúc 3 tầng (3-Tier Metadata Hierarchy)
 
 Iceberg không định nghĩa bảng bằng thư mục vật lý như Hive-style (e.g. `s3://bucket/year=2026/month=11/`). Thay vào đó, **bảng được định nghĩa bởi metadata files** — engine không cần `LIST` S3, chỉ cần đọc metadata là biết chính xác file nào thuộc bảng (xem [[iceberg-metadata-architecture]]).
 
@@ -36,7 +40,7 @@ Iceberg không định nghĩa bảng bằng thư mục vật lý như Hive-style
 └─────────────────────────────────────────────────────┘
 ```
 
-### Read Path & Write Path
+### 1.2. Read Path & Write Path
 
 **Read (không có một `LIST` S3 nào):**
 1. Engine hỏi Catalog → lấy current metadata file
@@ -60,7 +64,7 @@ Query: SELECT * WHERE amount > 5000 AND order_ts >= '2026-11-01'
 3. **Atomic CAS**: Catalog swap pointer từ `v2.json` → `v3.json`
 4. Nếu writer khác commit trước → check conflict → rebase/retry hoặc fail safe
 
-### Tính năng quan trọng
+### 1.3. Tính năng cốt lõi
 
 | Tính năng | Mô tả |
 |---|---|
@@ -73,9 +77,9 @@ Query: SELECT * WHERE amount > 5000 AND order_ts >= '2026-11-01'
 
 ---
 
-## Khi nào nên dùng Iceberg?
+## 2. Khi nào nên dùng Iceberg?
 
-### ✅ Dùng Iceberg khi:
+### 2.1. Dùng Iceberg khi:
 
 | Scenario | Lý do |
 |---|---|
@@ -88,7 +92,7 @@ Query: SELECT * WHERE amount > 5000 AND order_ts >= '2026-11-01'
 | **Audit / data lineage / rollback** | Time travel qua snapshot history |
 | **Replace Hive-style S3 lake** | Không còn `LIST` S3 tốn kém |
 
-### ❌ Không cần Iceberg khi:
+### 2.2. Không cần Iceberg khi:
 
 | Scenario | Giải thích |
 |---|---|
@@ -97,13 +101,24 @@ Query: SELECT * WHERE amount > 5000 AND order_ts >= '2026-11-01'
 | **Bảng nhỏ, query đơn giản, không cần ACID** | Plain Parquet đủ dùng |
 | **Team chưa sẵn sàng vận hành** | Iceberg không tự compact — cần schedule maintenance jobs |
 
-### ⚠️ Lưu ý vận hành
+### 2.3. Lưu ý vận hành
 
-Iceberg không tự dọn dẹp. Phải schedule 3 jobs định kỳ:
+Iceberg không tự dọn dẹp. Phải schedule 3 jobs định kỳ (xem [[iceberg-table-maintenance]]):
 - `rewrite_data_files` — compact small files → 128–512 MB
 - `expire_snapshots` — xóa old snapshots, thu hồi S3 storage
 - `remove_orphan_files` — xóa files từ failed jobs chưa được commit
 
 ---
 
-*Sources: [[apache-iceberg]], [[iceberg-metadata-architecture]], [[iceberg-table-optimizations]], [[apache-iceberg-format]], [[iceberg-table-maintenance]]*
+## 3. Phạm vi wiki chưa đề cập
+
+- Chi tiết chuẩn REST Catalog OpenAPI spec và triển khai Nessie / Polaris Catalog cho production.
+- Quy trình Write-Audit-Publish (WAP) pattern với Iceberg branches.
+
+## Sources Consulted
+
+- [[apache-iceberg]]
+- [[iceberg-metadata-architecture]]
+- [[iceberg-table-optimizations]]
+- [[apache-iceberg-format]]
+- [[iceberg-table-maintenance]]

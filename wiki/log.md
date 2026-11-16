@@ -80,3 +80,9 @@
 - Updated: none
 - Contradictions: none
 
+## [2026-11-16] query | Coalesce là gì và tác dụng của nó
+- Sources consulted: [[spark-partitioning-and-shuffle]], [[parquet-small-files-problem]], [[adaptive-query-execution]], [[aws-glue-job-optimization]], [[debugging-slow-spark-jobs]], [[spark-execution-model]], [[learn-spark]]
+- Saved output: outputs/spark-coalesce-guide.md
+- Updated: none
+- Contradictions: none
+

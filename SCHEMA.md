@@ -99,6 +99,42 @@ When the user asks a question:
 4. If the answer is valuable, offer to save it to `outputs/` (and, if it contains new synthesis, to fold it back into the wiki).
 5. Log the query in `wiki/log.md` only if something was saved or updated.
 
+### Output format (`outputs/<topic>.md`)
+
+When saving query outputs or technical guides to `outputs/`, follow this standardized structure:
+
+```markdown
+# <Topic Title in English or Vietnamese>
+
+**Date**: YYYY-MM-DD  
+**Sources**: [[page-1]], [[page-2]], ...
+
+---
+
+<1-2 sentence lead-in / summary>
+
+## 1. <Section Title>
+...
+
+## 2. <Section Title>
+...
+
+## N. Phạm vi wiki chưa đề cập
+- <Specific points or gaps not currently covered by vault sources>
+
+## Sources Consulted
+
+- [[page-1]]
+- [[page-2]]
+```
+
+Rules for outputs:
+- Heading 1 is a clean, descriptive topic title (do not prefix with `# Query:`).
+- Metadata header (`**Date**` and `**Sources**`) placed immediately below the title, before the first `---`.
+- Main content sections numbered systematically (`## 1.`, `## 2.`, etc.).
+- Always include a section highlighting what the wiki does not yet cover (`## N. Phạm vi wiki chưa đề cập`).
+- End with a clean `## Sources Consulted` bullet list linking to all consulted wiki pages.
+
 ## Workflow: LINT (on request, or suggest monthly)
 
 Check and report, then fix after the user agrees:
