@@ -1,5 +1,10 @@
 # Broadcast Join (Broadcast Hash Join) in Apache Spark: Concept & Mechanics
 
+**Date**: 2026-11-16  
+**Sources**: [[spark-partitioning-and-shuffle]], [[spark-execution-model]], [[debugging-slow-spark-jobs]], [[adaptive-query-execution]], [[learn-spark]], [[apache-spark]]
+
+---
+
 Tài liệu giải thích chi tiết về khái niệm, cơ chế hoạt động, cấu hình và so sánh của **Broadcast Join (Broadcast Hash Join)** trong Apache Spark, tổng hợp từ knowledge base.
 
 ---

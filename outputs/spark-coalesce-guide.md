@@ -1,5 +1,10 @@
 # Coalesce in Apache Spark: Concept, Use Cases & Best Practices
 
+**Date**: 2026-11-16  
+**Sources**: [[spark-partitioning-and-shuffle]], [[parquet-small-files-problem]], [[adaptive-query-execution]], [[aws-glue-job-optimization]], [[debugging-slow-spark-jobs]], [[spark-execution-model]], [[learn-spark]]
+
+---
+
 Tài liệu giải thích chi tiết về khái niệm, cơ chế hoạt động, tác dụng và lưu ý khi sử dụng **`coalesce`** trong Apache Spark, tổng hợp từ knowledge base.
 
 ---

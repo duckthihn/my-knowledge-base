@@ -189,9 +189,9 @@
   },
   "active": "23d098b6e90ccf8a",
   "lastOpenFiles": [
+    "outputs/iceberg-how-it-works-and-use-cases.md",
     "outputs/delta-lake-vs-iceberg.md",
     "outputs/spark-coalesce-guide.md",
-    "outputs/iceberg-how-it-works-and-use-cases.md",
     "outputs/broadcast-join-mechanics.md",
     "outputs/aws-glue-pyspark-best-practices.md",
     "wiki/problems/aws-glue-job-optimization.md",

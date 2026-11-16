@@ -86,3 +86,8 @@
 - Updated: none
 - Contradictions: none
 
+## [2026-11-16] note | Standardize outputs format
+- Scope: Defined standardized template for `outputs/` in SCHEMA.md and synchronized all 5 output documents
+- Updated: SCHEMA.md, outputs/iceberg-how-it-works-and-use-cases.md, outputs/delta-lake-vs-iceberg.md, outputs/aws-glue-pyspark-best-practices.md, outputs/broadcast-join-mechanics.md, outputs/spark-coalesce-guide.md
+
+
