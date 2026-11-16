@@ -68,3 +68,9 @@
 - Fixed formatting: replaced Markdown `raw/` links with inline code in [[apache-iceberg]], [[aws-athena]], [[aws-glue]], [[aws-lake-formation]]
 - Contradictions: none
 
+## [2026-11-16] query | Lưu ý viết và quản lý AWS Glue Jobs (PySpark) tối ưu
+- Sources consulted: [[aws-glue-job-optimization]], [[aws-glue-architecture-and-dpu]], [[dynamicframe-vs-dataframe]], [[glue-data-catalog]], [[adaptive-query-execution]], [[debugging-slow-spark-jobs]], [[parquet-small-files-problem]], [[spark-partitioning-and-shuffle]], [[spark-execution-model]], [[apache-iceberg-format]]
+- Saved output: outputs/aws-glue-pyspark-best-practices.md
+- Updated: none
+- Contradictions: none
+

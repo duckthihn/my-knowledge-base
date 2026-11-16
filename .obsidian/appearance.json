@@ -2,5 +2,6 @@
   "showRibbon": true,
   "theme": "system",
   "accentColor": "",
-  "cssTheme": "Catppuccin"
+  "cssTheme": "",
+  "textFontFamily": ""
 }
