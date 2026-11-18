@@ -30,6 +30,7 @@ Khách hàng hiện có (cập nhật theo `customers.tfvars`):
 | Code | Account ID khách | Tier |
 |---|---|---|
 | `unicharm` | `162168468537` | Admin |
+| `sol` | `271543371517` | Admin, ReadOnly |
 
 ## Chuẩn bị (làm một lần)
 
