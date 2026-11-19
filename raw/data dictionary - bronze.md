@@ -297,26 +297,26 @@ Nguồn: `DG-0004_M6_DASHBOARD_SOL_v7.html` (gói DG-0010_GOI_DU_LIEU_v2).
 - **Mô tả:** Bảng danh mục Bravo trong file SOL E&C_FIN (kiểm kê M7)
 - **Nhãn nguồn:** Thực · **DLCN:** DLCN cơ bản · **Mức bảo mật đề xuất:** Hạn chế
 
-| Cột | Kiểu | Mô tả | Nhãn nguồn | Phân loại Owner | DLCN | Mức bảo mật | Dùng ở Gold | Căn cứ |
-|---|---|---|---|---|---|---|---|---|
-| BranchCode |  | Bravo dbo.B20Dept; kiểm kê: Có dữ liệu mẫu | Thực |  | Không phải DLCN | Nội bộ |  | DG-0004/out/DG-0004_M7_FIN_KIEM_KE_v3.xlsx › Kiem_ke |
-| ClassCode1 |  | Bravo dbo.B20Dept; kiểm kê: Chỉ cấu trúc (rỗng) | Thực |  | Không phải DLCN | Nội bộ |  | DG-0004/out/DG-0004_M7_FIN_KIEM_KE_v3.xlsx › Kiem_ke |
-| ClassCode2 |  | Bravo dbo.B20Dept; kiểm kê: Chỉ cấu trúc (rỗng) | Thực |  | Không phải DLCN | Nội bộ |  | DG-0004/out/DG-0004_M7_FIN_KIEM_KE_v3.xlsx › Kiem_ke |
-| ClassCode3 |  | Bravo dbo.B20Dept; kiểm kê: Chỉ cấu trúc (rỗng) | Thực |  | Không phải DLCN | Nội bộ |  | DG-0004/out/DG-0004_M7_FIN_KIEM_KE_v3.xlsx › Kiem_ke |
-| Code |  | Bravo dbo.B20Dept; kiểm kê: Có dữ liệu mẫu | Thực |  | Không phải DLCN | Nội bộ |  | DG-0004/out/DG-0004_M7_FIN_KIEM_KE_v3.xlsx › Kiem_ke |
-| Code1 |  | Bravo dbo.B20Dept; kiểm kê: Có dữ liệu mẫu | Thực |  | Không phải DLCN | Nội bộ |  | DG-0004/out/DG-0004_M7_FIN_KIEM_KE_v3.xlsx › Kiem_ke |
-| CreatedAt |  | Bravo dbo.B20Dept; kiểm kê: Có dữ liệu mẫu | Thực |  | Không phải DLCN | Nội bộ |  | DG-0004/out/DG-0004_M7_FIN_KIEM_KE_v3.xlsx › Kiem_ke |
-| CreatedBy |  | Bravo dbo.B20Dept; kiểm kê: Có dữ liệu mẫu | Thực |  | DLCN cơ bản | Hạn chế |  | DG-0004/out/DG-0004_M7_FIN_KIEM_KE_v3.xlsx › Kiem_ke |
-| Id |  | Bravo dbo.B20Dept; kiểm kê: Có dữ liệu mẫu | Thực |  | Không phải DLCN | Nội bộ |  | DG-0004/out/DG-0004_M7_FIN_KIEM_KE_v3.xlsx › Kiem_ke |
-| IsActive |  | Bravo dbo.B20Dept; kiểm kê: Có dữ liệu mẫu | Thực |  | Không phải DLCN | Nội bộ |  | DG-0004/out/DG-0004_M7_FIN_KIEM_KE_v3.xlsx › Kiem_ke |
-| IsGroup |  | Bravo dbo.B20Dept; kiểm kê: Chỉ cấu trúc (toàn 0/mặc định) | Thực |  | Không phải DLCN | Nội bộ |  | DG-0004/out/DG-0004_M7_FIN_KIEM_KE_v3.xlsx › Kiem_ke |
-| ModifiedAt |  | Bravo dbo.B20Dept; kiểm kê: Có dữ liệu mẫu | Thực |  | Không phải DLCN | Nội bộ |  | DG-0004/out/DG-0004_M7_FIN_KIEM_KE_v3.xlsx › Kiem_ke |
-| ModifiedBy |  | Bravo dbo.B20Dept; kiểm kê: Có dữ liệu mẫu | Thực |  | DLCN cơ bản | Hạn chế |  | DG-0004/out/DG-0004_M7_FIN_KIEM_KE_v3.xlsx › Kiem_ke |
-| Name |  | Bravo dbo.B20Dept; kiểm kê: Có dữ liệu mẫu | Thực |  | Không phải DLCN | Nội bộ |  | DG-0004/out/DG-0004_M7_FIN_KIEM_KE_v3.xlsx › Kiem_ke |
-| Name2 |  | Bravo dbo.B20Dept; kiểm kê: Chỉ cấu trúc (rỗng) | Thực |  | Không phải DLCN | Nội bộ |  | DG-0004/out/DG-0004_M7_FIN_KIEM_KE_v3.xlsx › Kiem_ke |
-| ParentId |  | Bravo dbo.B20Dept; kiểm kê: Có dữ liệu mẫu | Thực |  | Không phải DLCN | Nội bộ |  | DG-0004/out/DG-0004_M7_FIN_KIEM_KE_v3.xlsx › Kiem_ke |
-| _ParentCode0 |  | Bravo dbo.B20Dept; kiểm kê: Chỉ cấu trúc (rỗng) | Thực |  | Không phải DLCN | Nội bộ |  | DG-0004/out/DG-0004_M7_FIN_KIEM_KE_v3.xlsx › Kiem_ke |
-| timestamp |  | Bravo dbo.B20Dept; kiểm kê: Có dữ liệu mẫu | Thực |  | Không phải DLCN | Nội bộ |  | DG-0004/out/DG-0004_M7_FIN_KIEM_KE_v3.xlsx › Kiem_ke |
+| Cột          | Kiểu | Mô tả                                                      | Nhãn nguồn | Phân loại Owner | DLCN            | Mức bảo mật | Dùng ở Gold | Căn cứ                                               |
+| ------------ | ---- | ---------------------------------------------------------- | ---------- | --------------- | --------------- | ----------- | ----------- | ---------------------------------------------------- |
+| BranchCode   |      | Bravo dbo.B20Dept; kiểm kê: Có dữ liệu mẫu                 | Thực       |                 | Không phải DLCN | Nội bộ      |             | DG-0004/out/DG-0004_M7_FIN_KIEM_KE_v3.xlsx › Kiem_ke |
+| ClassCode1   |      | Bravo dbo.B20Dept; kiểm kê: Chỉ cấu trúc (rỗng)            | Thực       |                 | Không phải DLCN | Nội bộ      |             | DG-0004/out/DG-0004_M7_FIN_KIEM_KE_v3.xlsx › Kiem_ke |
+| ClassCode2   |      | Bravo dbo.B20Dept; kiểm kê: Chỉ cấu trúc (rỗng)            | Thực       |                 | Không phải DLCN | Nội bộ      |             | DG-0004/out/DG-0004_M7_FIN_KIEM_KE_v3.xlsx › Kiem_ke |
+| ClassCode3   |      | Bravo dbo.B20Dept; kiểm kê: Chỉ cấu trúc (rỗng)            | Thực       |                 | Không phải DLCN | Nội bộ      |             | DG-0004/out/DG-0004_M7_FIN_KIEM_KE_v3.xlsx › Kiem_ke |
+| Code         |      | Bravo dbo.B20Dept; kiểm kê: Có dữ liệu mẫu                 | Thực       |                 | Không phải DLCN | Nội bộ      |             | DG-0004/out/DG-0004_M7_FIN_KIEM_KE_v3.xlsx › Kiem_ke |
+| Code1        |      | Bravo dbo.B20Dept; kiểm kê: Có dữ liệu mẫu                 | Thực       |                 | Không phải DLCN | Nội bộ      |             | DG-0004/out/DG-0004_M7_FIN_KIEM_KE_v3.xlsx › Kiem_ke |
+| CreatedAt    |      | Bravo dbo.B20Dept; kiểm kê: Có dữ liệu mẫu                 | Thực       |                 | Không phải DLCN | Nội bộ      |             | DG-0004/out/DG-0004_M7_FIN_KIEM_KE_v3.xlsx › Kiem_ke |
+| CreatedBy    |      | Bravo dbo.B20Dept; kiểm kê: Có dữ liệu mẫu                 | Thực       |                 | DLCN cơ bản     | Hạn chế     |             | DG-0004/out/DG-0004_M7_FIN_KIEM_KE_v3.xlsx › Kiem_ke |
+| Id           |      | Bravo dbo.B20Dept; kiểm kê: Có dữ liệu mẫu                 | Thực       |                 | Không phải DLCN | Nội bộ      |             | DG-0004/out/DG-0004_M7_FIN_KIEM_KE_v3.xlsx › Kiem_ke |
+| IsActive     |      | Bravo dbo.B20Dept; kiểm kê: Có dữ liệu mẫu                 | Thực       |                 | Không phải DLCN | Nội bộ      |             | DG-0004/out/DG-0004_M7_FIN_KIEM_KE_v3.xlsx › Kiem_ke |
+| IsGroup      |      | Bravo dbo.B20Dept; kiểm kê: Chỉ cấu trúc (toàn 0/mặc định) | Thực       |                 | Không phải DLCN | Nội bộ      |             | DG-0004/out/DG-0004_M7_FIN_KIEM_KE_v3.xlsx › Kiem_ke |
+| ModifiedAt   |      | Bravo dbo.B20Dept; kiểm kê: Có dữ liệu mẫu                 | Thực       |                 | Không phải DLCN | Nội bộ      |             | DG-0004/out/DG-0004_M7_FIN_KIEM_KE_v3.xlsx › Kiem_ke |
+| ModifiedBy   |      | Bravo dbo.B20Dept; kiểm kê: Có dữ liệu mẫu                 | Thực       |                 | DLCN cơ bản     | Hạn chế     |             | DG-0004/out/DG-0004_M7_FIN_KIEM_KE_v3.xlsx › Kiem_ke |
+| Name         |      | Bravo dbo.B20Dept; kiểm kê: Có dữ liệu mẫu                 | Thực       |                 | Không phải DLCN | Nội bộ      |             | DG-0004/out/DG-0004_M7_FIN_KIEM_KE_v3.xlsx › Kiem_ke |
+| Name2        |      | Bravo dbo.B20Dept; kiểm kê: Chỉ cấu trúc (rỗng)            | Thực       |                 | Không phải DLCN | Nội bộ      |             | DG-0004/out/DG-0004_M7_FIN_KIEM_KE_v3.xlsx › Kiem_ke |
+| ParentId     |      | Bravo dbo.B20Dept; kiểm kê: Có dữ liệu mẫu                 | Thực       |                 | Không phải DLCN | Nội bộ      |             | DG-0004/out/DG-0004_M7_FIN_KIEM_KE_v3.xlsx › Kiem_ke |
+| _ParentCode0 |      | Bravo dbo.B20Dept; kiểm kê: Chỉ cấu trúc (rỗng)            | Thực       |                 | Không phải DLCN | Nội bộ      |             | DG-0004/out/DG-0004_M7_FIN_KIEM_KE_v3.xlsx › Kiem_ke |
+| timestamp    |      | Bravo dbo.B20Dept; kiểm kê: Có dữ liệu mẫu                 | Thực       |                 | Không phải DLCN | Nội bộ      |             | DG-0004/out/DG-0004_M7_FIN_KIEM_KE_v3.xlsx › Kiem_ke |
 
 ## BRZ.SOL.BRAVO.B20Employee
 
