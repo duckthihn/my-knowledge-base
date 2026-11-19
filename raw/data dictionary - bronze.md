@@ -1393,26 +1393,26 @@ Nguồn: `DG-0004_M6_DASHBOARD_SOL_v7.html` (gói DG-0010_GOI_DU_LIEU_v2).
 - **Mô tả:** Bảng nguồn HRM
 - **Nhãn nguồn:** Thực · **DLCN:** DLCN cơ bản · **Mức bảo mật đề xuất:** Hạn chế
 
-| Cột | Kiểu | Mô tả | Nhãn nguồn | Phân loại Owner | DLCN | Mức bảo mật | Dùng ở Gold | Căn cứ |
-|---|---|---|---|---|---|---|---|---|
-| Cumulative_Salary | nvarchar(MAX) | Cột nguồn HRM OrganizationEmployeeNorms (DS_COT đánh dấu nhạy cảm) | Thực |  | DLCN cơ bản | Hạn chế |  | DG-0004/src/OUTPUT/00_KIEM_KE_CAU_TRUC_HRM.xlsx › DS_COT; DG-0004/src/DDL-HRM.sql |
-| DoanhThu | decimal(18, 0) | Cột nguồn HRM OrganizationEmployeeNorms | Thực |  | Không phải DLCN | Bảo mật |  | DG-0004/src/OUTPUT/00_KIEM_KE_CAU_TRUC_HRM.xlsx › DS_COT; DG-0004/src/DDL-HRM.sql |
-| DuPhong_BCH | decimal(18, 0) | Cột nguồn HRM OrganizationEmployeeNorms | Thực |  | Không phải DLCN | Bảo mật |  | DG-0004/src/OUTPUT/00_KIEM_KE_CAU_TRUC_HRM.xlsx › DS_COT; DG-0004/src/DDL-HRM.sql |
-| EndDate | datetime | Cột nguồn HRM OrganizationEmployeeNorms | Thực |  | Không phải DLCN | Nội bộ |  | DG-0004/src/OUTPUT/00_KIEM_KE_CAU_TRUC_HRM.xlsx › DS_COT; DG-0004/src/DDL-HRM.sql |
-| Id | int | Cột nguồn HRM OrganizationEmployeeNorms | Thực |  | Không phải DLCN | Nội bộ |  | DG-0004/src/OUTPUT/00_KIEM_KE_CAU_TRUC_HRM.xlsx › DS_COT; DG-0004/src/DDL-HRM.sql |
-| LoaiHinhDuAn | int | Cột nguồn HRM OrganizationEmployeeNorms | Thực |  | Không phải DLCN | Nội bộ |  | DG-0004/src/OUTPUT/00_KIEM_KE_CAU_TRUC_HRM.xlsx › DS_COT; DG-0004/src/DDL-HRM.sql |
-| NangXuatLaoDong | decimal(18, 0) | Cột nguồn HRM OrganizationEmployeeNorms | Thực |  | Không phải DLCN | Bảo mật |  | DG-0004/src/OUTPUT/00_KIEM_KE_CAU_TRUC_HRM.xlsx › DS_COT; DG-0004/src/DDL-HRM.sql |
-| NangXuatLaoDong_ToiThieu | decimal(18, 0) | Cột nguồn HRM OrganizationEmployeeNorms | Thực |  | Không phải DLCN | Bảo mật |  | DG-0004/src/OUTPUT/00_KIEM_KE_CAU_TRUC_HRM.xlsx › DS_COT; DG-0004/src/DDL-HRM.sql |
-| OrganizationId | int | Cột nguồn HRM OrganizationEmployeeNorms | Thực |  | Không phải DLCN | Nội bộ |  | DG-0004/src/OUTPUT/00_KIEM_KE_CAU_TRUC_HRM.xlsx › DS_COT; DG-0004/src/DDL-HRM.sql |
-| Percent_QL_DoanhThu | float | Cột nguồn HRM OrganizationEmployeeNorms | Thực |  | Không phải DLCN | Bảo mật |  | DG-0004/src/OUTPUT/00_KIEM_KE_CAU_TRUC_HRM.xlsx › DS_COT; DG-0004/src/DDL-HRM.sql |
-| Percent_QuyLuongToiDa | float | Cột nguồn HRM OrganizationEmployeeNorms (DS_COT đánh dấu nhạy cảm) | Thực |  | DLCN cơ bản | Hạn chế |  | DG-0004/src/OUTPUT/00_KIEM_KE_CAU_TRUC_HRM.xlsx › DS_COT; DG-0004/src/DDL-HRM.sql |
-| QuyLuongKeHoach | decimal(18, 0) | Cột nguồn HRM OrganizationEmployeeNorms (DS_COT đánh dấu nhạy cảm) | Thực |  | DLCN cơ bản | Hạn chế |  | DG-0004/src/OUTPUT/00_KIEM_KE_CAU_TRUC_HRM.xlsx › DS_COT; DG-0004/src/DDL-HRM.sql |
-| QuyLuongToiDa | decimal(18, 0) | Cột nguồn HRM OrganizationEmployeeNorms (DS_COT đánh dấu nhạy cảm) | Thực |  | DLCN cơ bản | Hạn chế |  | DG-0004/src/OUTPUT/00_KIEM_KE_CAU_TRUC_HRM.xlsx › DS_COT; DG-0004/src/DDL-HRM.sql |
-| QuyMoDuAn | nvarchar(MAX) | Cột nguồn HRM OrganizationEmployeeNorms | Thực |  | Không phải DLCN | Nội bộ |  | DG-0004/src/OUTPUT/00_KIEM_KE_CAU_TRUC_HRM.xlsx › DS_COT; DG-0004/src/DDL-HRM.sql |
-| Salary_Plan | nvarchar(MAX) | Cột nguồn HRM OrganizationEmployeeNorms (DS_COT đánh dấu nhạy cảm) | Thực |  | DLCN cơ bản | Hạn chế |  | DG-0004/src/OUTPUT/00_KIEM_KE_CAU_TRUC_HRM.xlsx › DS_COT; DG-0004/src/DDL-HRM.sql |
-| SoThang | int | Cột nguồn HRM OrganizationEmployeeNorms | Thực |  | Không phải DLCN | Nội bộ |  | DG-0004/src/OUTPUT/00_KIEM_KE_CAU_TRUC_HRM.xlsx › DS_COT; DG-0004/src/DDL-HRM.sql |
-| StartDate | datetime | Cột nguồn HRM OrganizationEmployeeNorms | Thực |  | Không phải DLCN | Nội bộ |  | DG-0004/src/OUTPUT/00_KIEM_KE_CAU_TRUC_HRM.xlsx › DS_COT; DG-0004/src/DDL-HRM.sql |
-| TongSoLuongNhanSu | int | Cột nguồn HRM OrganizationEmployeeNorms (DS_COT đánh dấu nhạy cảm) | Thực |  | DLCN cơ bản | Hạn chế |  | DG-0004/src/OUTPUT/00_KIEM_KE_CAU_TRUC_HRM.xlsx › DS_COT; DG-0004/src/DDL-HRM.sql |
+| Cột                      | Kiểu           | Mô tả                                                              | Nhãn nguồn | Phân loại Owner | DLCN            | Mức bảo mật | Dùng ở Gold | Căn cứ                                                                            |
+| ------------------------ | -------------- | ------------------------------------------------------------------ | ---------- | --------------- | --------------- | ----------- | ----------- | --------------------------------------------------------------------------------- |
+| Cumulative_Salary        | nvarchar(MAX)  | Cột nguồn HRM OrganizationEmployeeNorms (DS_COT đánh dấu nhạy cảm) | Thực       |                 | DLCN cơ bản     | Hạn chế     |             | DG-0004/src/OUTPUT/00_KIEM_KE_CAU_TRUC_HRM.xlsx › DS_COT; DG-0004/src/DDL-HRM.sql |
+| DoanhThu                 | decimal(18, 0) | Cột nguồn HRM OrganizationEmployeeNorms                            | Thực       |                 | Không phải DLCN | Bảo mật     |             | DG-0004/src/OUTPUT/00_KIEM_KE_CAU_TRUC_HRM.xlsx › DS_COT; DG-0004/src/DDL-HRM.sql |
+| DuPhong_BCH              | decimal(18, 0) | Cột nguồn HRM OrganizationEmployeeNorms                            | Thực       |                 | Không phải DLCN | Bảo mật     |             | DG-0004/src/OUTPUT/00_KIEM_KE_CAU_TRUC_HRM.xlsx › DS_COT; DG-0004/src/DDL-HRM.sql |
+| EndDate                  | datetime       | Cột nguồn HRM OrganizationEmployeeNorms                            | Thực       |                 | Không phải DLCN | Nội bộ      |             | DG-0004/src/OUTPUT/00_KIEM_KE_CAU_TRUC_HRM.xlsx › DS_COT; DG-0004/src/DDL-HRM.sql |
+| Id                       | int            | Cột nguồn HRM OrganizationEmployeeNorms                            | Thực       |                 | Không phải DLCN | Nội bộ      |             | DG-0004/src/OUTPUT/00_KIEM_KE_CAU_TRUC_HRM.xlsx › DS_COT; DG-0004/src/DDL-HRM.sql |
+| LoaiHinhDuAn             | int            | Cột nguồn HRM OrganizationEmployeeNorms                            | Thực       |                 | Không phải DLCN | Nội bộ      |             | DG-0004/src/OUTPUT/00_KIEM_KE_CAU_TRUC_HRM.xlsx › DS_COT; DG-0004/src/DDL-HRM.sql |
+| NangXuatLaoDong          | decimal(18, 0) | Cột nguồn HRM OrganizationEmployeeNorms                            | Thực       |                 | Không phải DLCN | Bảo mật     |             | DG-0004/src/OUTPUT/00_KIEM_KE_CAU_TRUC_HRM.xlsx › DS_COT; DG-0004/src/DDL-HRM.sql |
+| NangXuatLaoDong_ToiThieu | decimal(18, 0) | Cột nguồn HRM OrganizationEmployeeNorms                            | Thực       |                 | Không phải DLCN | Bảo mật     |             | DG-0004/src/OUTPUT/00_KIEM_KE_CAU_TRUC_HRM.xlsx › DS_COT; DG-0004/src/DDL-HRM.sql |
+| OrganizationId           | int            | Cột nguồn HRM OrganizationEmployeeNorms                            | Thực       |                 | Không phải DLCN | Nội bộ      |             | DG-0004/src/OUTPUT/00_KIEM_KE_CAU_TRUC_HRM.xlsx › DS_COT; DG-0004/src/DDL-HRM.sql |
+| Percent_QL_DoanhThu      | float          | Cột nguồn HRM OrganizationEmployeeNorms                            | Thực       |                 | Không phải DLCN | Bảo mật     |             | DG-0004/src/OUTPUT/00_KIEM_KE_CAU_TRUC_HRM.xlsx › DS_COT; DG-0004/src/DDL-HRM.sql |
+| Percent_QuyLuongToiDa    | float          | Cột nguồn HRM OrganizationEmployeeNorms (DS_COT đánh dấu nhạy cảm) | Thực       |                 | DLCN cơ bản     | Hạn chế     |             | DG-0004/src/OUTPUT/00_KIEM_KE_CAU_TRUC_HRM.xlsx › DS_COT; DG-0004/src/DDL-HRM.sql |
+| QuyLuongKeHoach          | decimal(18, 0) | Cột nguồn HRM OrganizationEmployeeNorms (DS_COT đánh dấu nhạy cảm) | Thực       |                 | DLCN cơ bản     | Hạn chế     |             | DG-0004/src/OUTPUT/00_KIEM_KE_CAU_TRUC_HRM.xlsx › DS_COT; DG-0004/src/DDL-HRM.sql |
+| QuyLuongToiDa            | decimal(18, 0) | Cột nguồn HRM OrganizationEmployeeNorms (DS_COT đánh dấu nhạy cảm) | Thực       |                 | DLCN cơ bản     | Hạn chế     |             | DG-0004/src/OUTPUT/00_KIEM_KE_CAU_TRUC_HRM.xlsx › DS_COT; DG-0004/src/DDL-HRM.sql |
+| QuyMoDuAn                | nvarchar(MAX)  | Cột nguồn HRM OrganizationEmployeeNorms                            | Thực       |                 | Không phải DLCN | Nội bộ      |             | DG-0004/src/OUTPUT/00_KIEM_KE_CAU_TRUC_HRM.xlsx › DS_COT; DG-0004/src/DDL-HRM.sql |
+| Salary_Plan              | nvarchar(MAX)  | Cột nguồn HRM OrganizationEmployeeNorms (DS_COT đánh dấu nhạy cảm) | Thực       |                 | DLCN cơ bản     | Hạn chế     |             | DG-0004/src/OUTPUT/00_KIEM_KE_CAU_TRUC_HRM.xlsx › DS_COT; DG-0004/src/DDL-HRM.sql |
+| SoThang                  | int            | Cột nguồn HRM OrganizationEmployeeNorms                            | Thực       |                 | Không phải DLCN | Nội bộ      |             | DG-0004/src/OUTPUT/00_KIEM_KE_CAU_TRUC_HRM.xlsx › DS_COT; DG-0004/src/DDL-HRM.sql |
+| StartDate                | datetime       | Cột nguồn HRM OrganizationEmployeeNorms                            | Thực       |                 | Không phải DLCN | Nội bộ      |             | DG-0004/src/OUTPUT/00_KIEM_KE_CAU_TRUC_HRM.xlsx › DS_COT; DG-0004/src/DDL-HRM.sql |
+| TongSoLuongNhanSu        | int            | Cột nguồn HRM OrganizationEmployeeNorms (DS_COT đánh dấu nhạy cảm) | Thực       |                 | DLCN cơ bản     | Hạn chế     |             | DG-0004/src/OUTPUT/00_KIEM_KE_CAU_TRUC_HRM.xlsx › DS_COT; DG-0004/src/DDL-HRM.sql |
 
 ## BRZ.SOL.HRM.Organizations
 
@@ -1445,14 +1445,14 @@ Nguồn: `DG-0004_M6_DASHBOARD_SOL_v7.html` (gói DG-0010_GOI_DU_LIEU_v2).
 - **Mô tả:** Bảng nguồn HRM
 - **Nhãn nguồn:** Thực · **DLCN:** DLCN cơ bản · **Mức bảo mật đề xuất:** Hạn chế
 
-| Cột | Kiểu | Mô tả | Nhãn nguồn | Phân loại Owner | DLCN | Mức bảo mật | Dùng ở Gold | Căn cứ |
-|---|---|---|---|---|---|---|---|---|
-| Code | varchar(50) | Cột nguồn HRM PreferDecisions | Thực |  | DLCN cơ bản | Hạn chế |  | DG-0004/src/OUTPUT/00_KIEM_KE_CAU_TRUC_HRM.xlsx › DS_COT; DG-0004/src/DDL-HRM.sql |
-| EmployeeId | uniqueidentifier | Cột nguồn HRM PreferDecisions | Thực |  | DLCN cơ bản | Hạn chế |  | DG-0004/src/OUTPUT/00_KIEM_KE_CAU_TRUC_HRM.xlsx › DS_COT; DG-0004/src/DDL-HRM.sql |
-| Id | int | Cột nguồn HRM PreferDecisions | Thực |  | DLCN cơ bản | Hạn chế |  | DG-0004/src/OUTPUT/00_KIEM_KE_CAU_TRUC_HRM.xlsx › DS_COT; DG-0004/src/DDL-HRM.sql |
-| JobPositionId | int | Cột nguồn HRM PreferDecisions | Thực |  | Không phải DLCN | Nội bộ |  | DG-0004/src/OUTPUT/00_KIEM_KE_CAU_TRUC_HRM.xlsx › DS_COT; DG-0004/src/DDL-HRM.sql |
-| NgayHieuLuc | date | Cột nguồn HRM PreferDecisions | Thực |  | DLCN cơ bản | Hạn chế |  | DG-0004/src/OUTPUT/00_KIEM_KE_CAU_TRUC_HRM.xlsx › DS_COT; DG-0004/src/DDL-HRM.sql |
-| OrganizationId | int | Cột nguồn HRM PreferDecisions | Thực |  | Không phải DLCN | Nội bộ |  | DG-0004/src/OUTPUT/00_KIEM_KE_CAU_TRUC_HRM.xlsx › DS_COT; DG-0004/src/DDL-HRM.sql |
+| Cột            | Kiểu             | Mô tả                         | Nhãn nguồn | Phân loại Owner | DLCN            | Mức bảo mật | Dùng ở Gold | Căn cứ                                                                            |
+| -------------- | ---------------- | ----------------------------- | ---------- | --------------- | --------------- | ----------- | ----------- | --------------------------------------------------------------------------------- |
+| Code           | varchar(50)      | Cột nguồn HRM PreferDecisions | Thực       |                 | DLCN cơ bản     | Hạn chế     |             | DG-0004/src/OUTPUT/00_KIEM_KE_CAU_TRUC_HRM.xlsx › DS_COT; DG-0004/src/DDL-HRM.sql |
+| EmployeeId     | uniqueidentifier | Cột nguồn HRM PreferDecisions | Thực       |                 | DLCN cơ bản     | Hạn chế     |             | DG-0004/src/OUTPUT/00_KIEM_KE_CAU_TRUC_HRM.xlsx › DS_COT; DG-0004/src/DDL-HRM.sql |
+| Id             | int              | Cột nguồn HRM PreferDecisions | Thực       |                 | DLCN cơ bản     | Hạn chế     |             | DG-0004/src/OUTPUT/00_KIEM_KE_CAU_TRUC_HRM.xlsx › DS_COT; DG-0004/src/DDL-HRM.sql |
+| JobPositionId  | int              | Cột nguồn HRM PreferDecisions | Thực       |                 | Không phải DLCN | Nội bộ      |             | DG-0004/src/OUTPUT/00_KIEM_KE_CAU_TRUC_HRM.xlsx › DS_COT; DG-0004/src/DDL-HRM.sql |
+| NgayHieuLuc    | date             | Cột nguồn HRM PreferDecisions | Thực       |                 | DLCN cơ bản     | Hạn chế     |             | DG-0004/src/OUTPUT/00_KIEM_KE_CAU_TRUC_HRM.xlsx › DS_COT; DG-0004/src/DDL-HRM.sql |
+| OrganizationId | int              | Cột nguồn HRM PreferDecisions | Thực       |                 | Không phải DLCN | Nội bộ      |             | DG-0004/src/OUTPUT/00_KIEM_KE_CAU_TRUC_HRM.xlsx › DS_COT; DG-0004/src/DDL-HRM.sql |
 
 ## BRZ.SOL.HRM.Schools
 
