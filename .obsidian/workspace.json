@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "note.md",
+                "file": "Công thức tính KPI.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "note"
+              "title": "Công thức tính KPI"
             }
           }
         ],
@@ -202,12 +202,13 @@
       "graph:Open graph view": false
     }
   },
-  "active": "6bfc7e7e6207e899",
+  "active": "179a29eb0b48f026",
   "lastOpenFiles": [
+    "Công thức tính KPI 1.md",
+    "Công thức tính KPI.md",
     "raw/data dictionary - bronze.md",
     "raw/Untitled.md",
     "raw/user guide.md",
-    "note.md",
     "raw/Công thức & nguồn dữ liệu.md",
     "outputs/spark-coalesce-guide.md",
     "outputs/iceberg-how-it-works-and-use-cases.md",
@@ -229,7 +230,6 @@
     "raw/glue-pyspark-coding-template.md",
     "raw/apache-parquet.md",
     "README.md",
-    "wiki/sources/aws-athena.md",
     "raw/assets/Pasted image 20261115024734.png",
     "raw/assets/Pasted image 20261114134958.png",
     "raw/assets/Pasted image 20261114134748.png",
