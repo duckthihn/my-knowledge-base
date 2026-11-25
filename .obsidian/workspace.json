@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "note.md",
-                "mode": "source",
+                "file": "raw/user guide.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "note"
+              "title": "user guide"
             }
           }
         ],
@@ -218,8 +218,8 @@
   },
   "active": "41a88e2656837664",
   "lastOpenFiles": [
-    "raw/data dictionary - bronze.md",
     "note.md",
+    "raw/data dictionary - bronze.md",
     "raw/user guide.md",
     "raw/Công thức & nguồn dữ liệu.md",
     "outputs/spark-coalesce-guide.md",
